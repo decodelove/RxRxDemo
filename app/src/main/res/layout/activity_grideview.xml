@@ -6,8 +6,15 @@
     android:layout_gravity="center_horizontal"
     tools:context="com.google.qike.GrideViewDemo">
 
+    <ImageView
+        android:id="@+id/grideview_image"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
     <GridView
         android:id="@+id/gride_view"
+        android:numColumns="2"
+        android:layout_below="@id/grideview_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></GridView>
 </RelativeLayout>
